@@ -1,20 +1,14 @@
 import pytest
 from selenium import webdriver
-
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-
-
 
 def test_show_my_pets():
     # неявное ожидание 5 сек. при каждом шаге
 
     pytest.driver = webdriver.Chrome()
     pytest.driver.implicitly_wait(5)
-
-
-
 
 
     # Нажимаем на кнопку для перехода к списку своих питомцев
